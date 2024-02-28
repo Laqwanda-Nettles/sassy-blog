@@ -4,57 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nomad Travels | Explore</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header">
       <nav class="header__nav">
-        <h1 class="header__brand">Nomad Travels</h1>
+        <h1 class="header__brand"><a href="index.html">Nomad Travels</a></h1>
         <ul class="header__menu">
-          <li class="header__menu-item">Explore</li>
-          <li class="header__menu-item">Blog</li>
+          <li class="header__menu-item"><a href="#">Explore</a></li>
+          <li class="header__menu-item"><a href="#">Blog</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="destinations">
         <h2>Top Destinations</h2>
-        <div class="cards-containder">
-          <div class="card">
+        <div class="destinations__card-container">
+          <div class="destinations__card">
             <h3>Paris</h3>
           </div>
-          <div class="card">
+          <div class="destinations__card">
             <h3>London</h3>
           </div>
-          <div class="card">
+          <div class="destinations__card">
             <h3>San Fransisco</h3>
           </div>
         </div>
       </section>
       <section class="statistics">
-        <div>
-          <p>456</p>
-          <p>visits today</p>
+        <div class="statistics__container">
+          <p class="statistics__data--today">456</p>
+          <p class="statistics__description">visits today</p>
         </div>
-        <div>
-          <p>14558</p>
-          <p>visits per month</p>
+        <div class="statistics__container">
+          <p class="statistics__data--monthly">14558</p>
+          <p class="statistics__description">visits per month</p>
         </div>
-        <div>
-          <p>236556</p>
-          <p>total visits</p>
+        <div class="statistics__container">
+          <p class="statistics__data--total">236556</p>
+          <p class="statistics__description">total visits</p>
         </div>
       </section>
-      <section class="recent-blog">
-        <h2>Epic Sea View of Santorini, Greece</h2>
-        <p>May 15, 2023 - 3 Comments</p>
-        <img src="" alt="" />
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit quos
-          est esse fugiat voluptas et repudiandae mollitia consequatur,
-          accusantium quaerat natus at, eius numquam rem. Temporibus incidunt
-          animi sit vero.
+      <section id="tokyo-article" class="recent-blog">
+        <h2 class="recent-blog__title">Exploring Tokyo's Night Life!</h2>
+        <p class="recent-blog__date">May 15, 2023 - 3 Comments</p>
+        <img
+          class="recent-blog__image"
+          src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="crowded tokyo at night"
+        />
+        <p class="recent-blog__article">
+          As you might expect from one of the world's biggest and most bustling
+          cities, Tokyo is phenomenally vibrant at night. We'll cover the best
+          night views, popular nightlife districts like Shinjuku and Roppongi,
+          places to drink, places to see live music, and much more. Let's
+          explore Tokyo at night.
         </p>
-        <a href="#">Continue Reading</a>
+        <a class="recent-blog__link" href="#">Continue Reading</a>
       </section>
     </main>
     <footer>&copy; 2024 Nomad Travels</footer>
