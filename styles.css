@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #ffdeb1;
+  background-color: #ded6c9;
 }
 
 .header__nav {
@@ -24,7 +24,13 @@ body {
 }
 .header__menu-item {
   font-size: 20px;
-  cursor: pointer;
+}
+.header__menu-item a {
+  color: #fff;
+  text-decoration: none;
+}
+.header__menu-item a:hover {
+  color: #d5603f;
 }
 
 .hero-image {
@@ -60,7 +66,7 @@ body {
   animation: moving-in 1s ease-in-out;
 }
 .hero-image__button:hover {
-  background-color: #ffdeb1;
+  background-color: #ded6c9;
   color: #56202d;
   transform: translateY(-2px);
 }

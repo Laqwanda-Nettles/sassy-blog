@@ -1,0 +1,18 @@
+//Primary Colors
+$primaryColor: #56202d;
+$secondaryColor: #8e3a52;
+$accent-color: #d5603f;
+$secondary-accent: #767e0f;
+
+//Text Colors
+$text-primary: #333;
+$text-secondary: $primaryColor;
+$text-contrast: #fff;
+
+//Background Colors
+$background-primary: #ded6c9;
+$background-secondary: #dcd1cb;
+
+//Link Colors
+$link-color: $text-contrast;
+$link-hover-color: lighten($accent-color, 10%);
