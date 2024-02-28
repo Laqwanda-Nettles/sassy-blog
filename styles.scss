@@ -1,8 +1,5 @@
 @import "color-variables";
-$fontHeaders: Georgia, "Times New Roman", Times, serif;
-$fonts: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-$fontSize: 20px;
-$bold: 500;
+@import "typography";
 $padding: 10px;
 $margin: 10px;
 $margin-b: 20px;
@@ -27,7 +24,7 @@ body {
     align-items: center;
     background-color: $primaryColor;
     color: $text-contrast;
-    font-family: $fontHeaders;
+    font-family: $font-primary;
   }
   &__menu {
     display: flex;
@@ -36,7 +33,7 @@ body {
     gap: 15px;
   }
   &__menu-item {
-    font-size: $fontSize;
+    font-size: $font-sm;
     a {
       color: $text-contrast;
       text-decoration: none;
@@ -58,8 +55,8 @@ body {
   margin-bottom: $margin-b;
   &__text {
     padding: $padding;
-    font-family: $fontHeaders;
-    font-size: 40px;
+    font-family: $font-primary;
+    font-size: $font-lg;
     color: $text-contrast;
     text-shadow: 2px 2px 2px black;
   }
@@ -68,8 +65,8 @@ body {
     background-color: $secondaryColor;
     height: 50px;
     width: 150px;
-    font-size: $fontSize;
-    font-family: $fonts;
+    font-size: $font-sm;
+    font-family: $font-secondary;
     padding: $padding;
     margin: $margin;
     border-radius: 5px;
@@ -102,8 +99,8 @@ body {
 
 // main section - header & cards
 main h2 {
-  font-size: 30px;
-  font-family: $fontHeaders;
+  font-size: $font-md;
+  font-family: $font-primary;
   margin-bottom: $margin-b;
   text-align: center;
   color: $text-secondary;
@@ -131,15 +128,15 @@ main h2 {
     margin-bottom: $margin;
   }
   &__title {
-    font-size: $fontSize;
-    font-family: $fonts;
+    font-size: $font-sm;
+    font-family: $font-secondary;
     text-align: center;
     margin-bottom: $margin;
     padding: 5px;
   }
   &__button {
-    font-size: $fontSize;
-    font-family: $fonts;
+    font-size: $font-sm;
+    font-family: $font-secondary;
     font-weight: $bold;
     background-color: $secondaryColor;
     color: $text-contrast;
@@ -155,8 +152,8 @@ main h2 {
 
 //footer
 footer {
-  font-size: $fontSize;
-  font-family: $fonts;
+  font-size: $font-sm;
+  font-family: $font-secondary;
   color: $text-contrast;
   background-color: $primaryColor;
   height: 50px;
