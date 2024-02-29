@@ -1,4 +1,5 @@
 @import "base";
+@import "dashboard-layout";
 @import "color-variables";
 @import "typography";
 
@@ -13,6 +14,15 @@
     color: $text-contrast;
     font-family: $font-primary;
   }
+  &__brand {
+    a {
+      color: $text-contrast;
+      text-decoration: none;
+    }
+    a:hover {
+      color: lighten($secondary-accent, 40%);
+    }
+  }
   &__menu {
     display: flex;
     list-style-type: none;
@@ -26,7 +36,7 @@
       text-decoration: none;
     }
     a:hover {
-      color: $accent-color;
+      color: lighten($accent-color, 15%);
     }
   }
 }
@@ -146,4 +156,123 @@ footer {
   height: 50px;
   text-align: center;
   padding: $padding;
+}
+
+//dashboard section
+//Section 1: Destinations
+.destinations {
+  &__card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: $margin-b;
+  }
+  h2 {
+    margin-top: $margin;
+  }
+  &__card--paris {
+    background-image: url("https://images.unsplash.com/photo-1509439581779-6298f75bf6e5?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 300px;
+    width: 250px;
+    border-radius: 15px;
+    margin: $margin;
+    object-fit: cover;
+  }
+  &__card--london {
+    background-image: url("https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 300px;
+    width: 250px;
+    border-radius: 15px;
+    margin: $margin;
+    object-fit: cover;
+  }
+  &__card--sanfran {
+    background-image: url("https://images.unsplash.com/photo-1583743220494-3da91330c2fd?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNhbiUyMGZyYW5jaXNjb3xlbnwwfHwwfHx8MA%3D%3D");
+    height: 300px;
+    width: 250px;
+    border-radius: 15px;
+    margin: $margin;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $boxShadow;
+    h3 {
+      color: $text-contrast;
+      background-color: $accent-color;
+      font-size: $font-md;
+      font-family: $font-secondary;
+      width: 100vw;
+      text-align: center;
+    }
+  }
+}
+
+//Section 2: Statistics
+.statistics {
+  background-color: $background-secondary;
+  margin-bottom: $margin-b;
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+  }
+  &__data {
+    font-size: $font-lg;
+    font-family: $font-secondary;
+    font-weight: $bold;
+    text-align: center;
+  }
+  &__description {
+    font-family: $font-primary;
+    text-align: center;
+    font-size: $font-sm;
+  }
+  &__data--today {
+    color: $accent-color;
+  }
+  &__data--monthly {
+    color: darken($secondary-accent, 5%);
+  }
+  &__data--total {
+    color: $secondaryColor;
+  }
+}
+
+//Section 3: Recent Blog
+.recent-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: $margin-b;
+  &__date {
+    text-align: center;
+    margin-bottom: $margin;
+    font-size: $font-sm;
+    font-family: $font-primary;
+    font-weight: $bold;
+    color: $text-primary;
+  }
+  &__image {
+    height: 400px;
+    border-radius: 20px;
+    margin: $margin;
+  }
+  &__article {
+    font-size: 25px;
+    font-family: $font-secondary;
+    margin: $margin;
+  }
+  &__link {
+    text-decoration: none;
+    color: $secondaryColor;
+    font-size: $font-sm;
+    font-family: $font-primary;
+    font-weight: $bold;
+  }
 }
