@@ -1,0 +1,35 @@
+@mixin flex-layout($justify: center, $align: center, $direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+@mixin button-style(
+  $background: $secondaryColor,
+  $text: $text-contrast,
+  $border-radius: 5px
+) {
+  background-color: $background;
+  color: $text;
+  border-radius: $border-radius;
+  padding: $padding;
+  margin: $margin;
+  cursor: pointer;
+  &__hover {
+    background-color: $background-primary;
+    color: $primaryColor;
+  }
+}
+
+@mixin font-style(
+  $font-family: $font-primary,
+  $font-size: 18px,
+  $line-height: 1.5
+) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}
