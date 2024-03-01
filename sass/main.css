@@ -30,6 +30,11 @@ body {
   color: #e3947e;
 }
 
+footer {
+  color: #fff;
+  background-color: #56202d;
+}
+
 .header__nav {
   display: flex;
   flex-direction: row;
@@ -47,6 +52,16 @@ body {
   gap: 15px;
   flex-wrap: wrap;
   list-style-type: none;
+}
+
+footer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
 }
 
 @media (width < 800px) {
