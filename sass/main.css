@@ -193,12 +193,6 @@ main h2 {
   .destinations__card-container {
     flex-wrap: wrap;
   }
-  .header__nav {
-    width: 100vw;
-  }
-  footer__nav {
-    width: 100vw;
-  }
   .statistics {
     width: 100vw;
   }
