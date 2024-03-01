@@ -1,0 +1,7 @@
+//footer
+footer {
+  @include font-style($font-secondary);
+  height: 50px;
+  text-align: center;
+  padding: $padding;
+}

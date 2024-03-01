@@ -172,18 +172,6 @@ main h2 {
   cursor: pointer;
 }
 
-footer {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  color: #fff;
-  background-color: #56202d;
-  height: 50px;
-  text-align: center;
-  padding: 10px;
-}
-
 .destinations__card-container {
   display: flex;
   flex-direction: row;

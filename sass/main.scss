@@ -99,16 +99,6 @@ main h2 {
   }
 }
 
-//footer
-footer {
-  @include font-style($font-secondary);
-  color: $text-contrast;
-  background-color: $primaryColor;
-  height: 50px;
-  text-align: center;
-  padding: $padding;
-}
-
 //dashboard section
 //Section 1: Destinations
 .destinations {
