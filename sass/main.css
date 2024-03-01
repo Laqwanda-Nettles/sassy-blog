@@ -35,6 +35,32 @@ footer {
   background-color: #56202d;
 }
 
+main h2 {
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #56202d;
+}
+
+.hero-image {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .header__nav {
   display: flex;
   flex-direction: row;
@@ -64,41 +90,21 @@ footer {
   padding: 10px;
 }
 
-@media (width < 800px) {
-  .destinations__card-container {
-    flex-wrap: wrap;
-  }
-  .header__nav {
-    width: 100vw;
-  }
-  footer__nav {
-    width: 100vw;
-  }
-  .statistics {
-    width: 100vw;
-  }
-  .statistics__container {
-    flex-wrap: wrap;
-  }
-  .recent-blog__image {
-    height: 300px;
-    width: 350px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0.325)), url("https://images.unsplash.com/photo-1544084944-15269ec7b5a0?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  height: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 .hero-image__text {
-  padding: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 40px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 10px;
   color: #fff;
   text-shadow: 2px 2px 2px black;
 }
@@ -134,14 +140,6 @@ footer {
     transform: translateX(10px);
   }
 }
-main h2 {
-  font-size: 30px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #56202d;
-}
-
 .card {
   display: flex;
   justify-content: space-around;
@@ -173,20 +171,36 @@ main h2 {
   padding: 5px;
 }
 .card__button {
-  font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 500;
   background-color: #8e3a52;
   color: #fff;
   width: 130px;
   height: 50px;
-  text-align: center;
   margin: auto;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
 }
 
+@media (width < 800px) {
+  .destinations__card-container {
+    flex-wrap: wrap;
+  }
+  .header__nav {
+    width: 100vw;
+  }
+  footer__nav {
+    width: 100vw;
+  }
+  .statistics {
+    width: 100vw;
+  }
+  .statistics__container {
+    flex-wrap: wrap;
+  }
+  .recent-blog__image {
+    height: 300px;
+    width: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .destinations__card-container {
   display: flex;
   flex-direction: row;
