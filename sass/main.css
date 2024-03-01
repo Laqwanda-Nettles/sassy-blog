@@ -44,6 +44,7 @@ main h2 {
 }
 
 .hero-image {
+  width: 100vw;
   height: 300px;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,6 +60,44 @@ main h2 {
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.card__content-container {
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 15px;
+  height: 400px;
+  width: 300px;
+  box-shadow: 3px 3px 3px #333;
+}
+.card__image {
+  height: 250px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 10px;
+}
+.card__title {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.card__button {
+  background-color: #8e3a52;
+  color: #fff;
+  width: 130px;
+  height: 50px;
+  margin: auto;
 }
 
 .header__nav {
@@ -80,11 +119,12 @@ main h2 {
   list-style-type: none;
 }
 
-footer {
+.footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
+  width: 100vw;
   height: 50px;
   text-align: center;
   padding: 10px;
@@ -140,42 +180,13 @@ footer {
     transform: translateX(10px);
   }
 }
-.card {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
-}
 .card__section {
-  background-color: #fff;
-  margin: 20px;
-  border-radius: 15px;
-  height: 415px;
-  width: 200px;
-  box-shadow: 3px 3px 3px #333;
+  height: 400px;
+  width: 310px;
 }
 .card__image {
   height: 250px;
-  width: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 15px 15px 0 0;
-  margin-bottom: 10px;
-}
-.card__title {
-  font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  margin-bottom: 10px;
-  padding: 5px;
-}
-.card__button {
-  background-color: #8e3a52;
-  color: #fff;
-  width: 130px;
-  height: 50px;
-  margin: auto;
+  width: 310px;
 }
 
 @media (width < 800px) {

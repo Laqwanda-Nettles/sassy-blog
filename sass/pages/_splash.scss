@@ -35,38 +35,12 @@
 
 // main section - cards
 .card {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: $margin-b;
   &__section {
-    background-color: $text-contrast;
-    margin: $margin-b;
-    border-radius: 15px;
-    height: 415px;
-    width: 200px;
-    box-shadow: $boxShadow;
+    height: 400px;
+    width: 310px;
   }
   &__image {
     height: 250px;
-    width: 200px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-    margin-bottom: $margin;
-  }
-  &__title {
-    font-size: $font-sm;
-    font-family: $font-secondary;
-    text-align: center;
-    margin-bottom: $margin;
-    padding: 5px;
-  }
-  &__button {
-    background-color: $secondaryColor;
-    color: $text-contrast;
-    width: 130px;
-    height: 50px;
-    margin: auto;
+    width: 310px;
   }
 }
