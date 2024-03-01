@@ -1,15 +1,13 @@
 @import "base";
-@import "dashboard-layout";
 @import "color-variables";
 @import "typography";
-
+@import "mixins";
+@import "dashboard-layout";
 //header navbar
 .header {
   &__nav {
-    display: flex;
+    @include flex-layout(space-between);
     padding: $padding;
-    justify-content: space-between;
-    align-items: center;
     background-color: $primaryColor;
     color: $text-contrast;
     font-family: $font-primary;
@@ -24,10 +22,8 @@
     }
   }
   &__menu {
-    display: flex;
+    @include flex-layout(space-around);
     list-style-type: none;
-    justify-content: space-around;
-    gap: 15px;
   }
   &__menu-item {
     font-size: $font-sm;
@@ -58,26 +54,13 @@
     text-shadow: 2px 2px 2px black;
   }
   &__button {
-    cursor: pointer;
-    background-color: $secondaryColor;
+    @include button-style;
     height: 50px;
     width: 150px;
-    font-size: $font-sm;
-    font-family: $font-secondary;
-    padding: $padding;
-    margin: $margin;
-    border-radius: 5px;
     border: $primaryColor 2px solid;
-    color: $text-contrast;
-    text-align: center;
     box-shadow: $boxShadow;
     font-weight: $bold;
     animation: moving-in 1s ease-in-out;
-  }
-  &__button:hover {
-    background-color: $background-primary;
-    color: $primaryColor;
-    transform: translateY(-2px);
   }
 }
 // animation for call to action button
@@ -149,8 +132,7 @@ main h2 {
 
 //footer
 footer {
-  font-size: $font-sm;
-  font-family: $font-secondary;
+  @include font-style($font-secondary);
   color: $text-contrast;
   background-color: $primaryColor;
   height: 50px;
@@ -162,8 +144,7 @@ footer {
 //Section 1: Destinations
 .destinations {
   &__card-container {
-    display: flex;
-    justify-content: space-around;
+    @include flex-layout(space-around);
     margin-bottom: $margin-b;
   }
   h2 {
@@ -196,17 +177,13 @@ footer {
     background-repeat: no-repeat;
   }
   &__card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-layout;
     box-shadow: $boxShadow;
     h3 {
+      @include font-style($font-secondary, $font-md);
       color: $text-contrast;
       background-color: $accent-color;
-      font-size: $font-md;
-      font-family: $font-secondary;
       width: 100vw;
-      text-align: center;
     }
   }
 }
@@ -216,21 +193,15 @@ footer {
   background-color: $background-secondary;
   margin-bottom: $margin-b;
   &__container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex-layout(space-evenly);
     height: 200px;
   }
   &__data {
-    font-size: $font-lg;
-    font-family: $font-secondary;
+    @include font-style($font-secondary, $font-lg, 1.3);
     font-weight: $bold;
-    text-align: center;
   }
   &__description {
-    font-family: $font-primary;
-    text-align: center;
-    font-size: $font-sm;
+    @include font-style;
   }
   &__data--today {
     color: $accent-color;
@@ -245,16 +216,11 @@ footer {
 
 //Section 3: Recent Blog
 .recent-blog {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-layout($direction: column);
   margin-bottom: $margin-b;
   &__date {
-    text-align: center;
+    @include font-style;
     margin-bottom: $margin;
-    font-size: $font-sm;
-    font-family: $font-primary;
     font-weight: $bold;
     color: $text-primary;
   }
@@ -264,15 +230,19 @@ footer {
     margin: $margin;
   }
   &__article {
-    font-size: 25px;
-    font-family: $font-secondary;
+    @include font-style(
+      $font-secondary,
+      22px,
+      1.3,
+      justify
+    ); // font-size: 25px;
+    // font-family: $font-secondary;
     margin: $margin;
   }
   &__link {
+    @include font-style;
     text-decoration: none;
     color: $secondaryColor;
-    font-size: $font-sm;
-    font-family: $font-primary;
     font-weight: $bold;
   }
 }
