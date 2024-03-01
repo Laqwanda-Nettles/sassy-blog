@@ -7,6 +7,48 @@ body {
   background-color: #ded6c9;
 }
 
+.header__nav {
+  background-color: #56202d;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.header__brand a {
+  color: #fff;
+  text-decoration: none;
+}
+.header__brand a:hover {
+  color: #e4ed6c;
+}
+.header__menu-item {
+  font-size: 20px;
+}
+.header__menu-item a {
+  color: #fff;
+  text-decoration: none;
+}
+.header__menu-item a:hover {
+  color: #e3947e;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
 @media (width < 800px) {
   .destinations__card-container {
     flex-wrap: wrap;
@@ -30,45 +72,6 @@ body {
        object-fit: cover;
   }
 }
-.header__nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  padding: 10px;
-  background-color: #56202d;
-  color: #fff;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.header__brand a {
-  color: #fff;
-  text-decoration: none;
-}
-.header__brand a:hover {
-  color: #e4ed6c;
-}
-.header__menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  list-style-type: none;
-}
-.header__menu-item {
-  font-size: 20px;
-}
-.header__menu-item a {
-  color: #fff;
-  text-decoration: none;
-}
-.header__menu-item a:hover {
-  color: #e3947e;
-}
-
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0.325)), url("https://images.unsplash.com/photo-1544084944-15269ec7b5a0?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   height: 300px;
@@ -315,4 +318,4 @@ footer {
   text-decoration: none;
   color: #8e3a52;
   font-weight: 500;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=main.css.map */

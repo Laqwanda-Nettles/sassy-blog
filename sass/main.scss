@@ -1,41 +1,10 @@
-@import "base";
-@import "color-variables";
-@import "typography";
-@import "mixins";
-@import "dashboard-layout";
-//header navbar
-.header {
-  &__nav {
-    @include flex-layout(space-between);
-    padding: $padding;
-    background-color: $primaryColor;
-    color: $text-contrast;
-    font-family: $font-primary;
-  }
-  &__brand {
-    a {
-      color: $text-contrast;
-      text-decoration: none;
-    }
-    a:hover {
-      color: lighten($secondary-accent, 40%);
-    }
-  }
-  &__menu {
-    @include flex-layout(space-around);
-    list-style-type: none;
-  }
-  &__menu-item {
-    font-size: $font-sm;
-    a {
-      color: $text-contrast;
-      text-decoration: none;
-    }
-    a:hover {
-      color: lighten($accent-color, 15%);
-    }
-  }
-}
+@import "abstracts/variables";
+@import "base/base";
+@import "themes/autumn-symphony";
+@import "abstracts/mixins";
+@import "components/navbar";
+@import "layout/navigation";
+@import "pages/dashboard";
 
 //hero image
 .hero-image {

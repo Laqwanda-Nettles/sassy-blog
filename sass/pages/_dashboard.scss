@@ -1,0 +1,30 @@
+@media (width < 800px) {
+  .destinations {
+    &__card-container {
+      flex-wrap: wrap;
+    }
+  }
+  .header {
+    &__nav {
+      width: 100vw;
+    }
+  }
+  footer {
+    &__nav {
+      width: 100vw;
+    }
+  }
+  .statistics {
+    width: 100vw;
+    &__container {
+      flex-wrap: wrap;
+    }
+  }
+  .recent-blog {
+    &__image {
+      height: 300px;
+      width: 350px;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+//header navbar
+.header {
+  &__nav {
+    @include flex-layout(space-between);
+    padding: $padding;
+  }
+  &__menu {
+    @include flex-layout(space-around);
+    list-style-type: none;
+  }
+}

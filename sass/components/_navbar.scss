@@ -1,0 +1,27 @@
+//header navbar
+.header {
+  &__nav {
+    background-color: $primaryColor;
+    color: $text-contrast;
+    font-family: $font-primary;
+  }
+  &__brand {
+    a {
+      color: $text-contrast;
+      text-decoration: none;
+    }
+    a:hover {
+      color: lighten($secondary-accent, 40%);
+    }
+  }
+  &__menu-item {
+    font-size: $font-sm;
+    a {
+      color: $text-contrast;
+      text-decoration: none;
+    }
+    a:hover {
+      color: lighten($accent-color, 15%);
+    }
+  }
+}
